@@ -1,0 +1,27 @@
+{
+  "name": "lint-staged-tsc",
+  "version": "0.0.0",
+  "description": "Lint staged plugin for typescript type checking",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc --project tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kontenty/lint-staged-tsc.git"
+  },
+  "keywords": [
+    "node",
+    "typescript",
+    "lint-staged"
+  ],
+  "author": "Konrad Gorski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kontenty/lint-staged-tsc/issues"
+  },
+  "homepage": "https://github.com/Kontenty/lint-staged-tsc#readme",
+  "devDependencies": {
+    "typescript": "^4.6.3"
+  }
+}
