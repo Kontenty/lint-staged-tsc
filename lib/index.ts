@@ -1,1 +1,1 @@
-export { default } from "./fileTypeCheck";
+export {default} from './file-type-check';
