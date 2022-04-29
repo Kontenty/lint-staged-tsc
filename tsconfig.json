@@ -1,17 +1,14 @@
 {
   "compilerOptions": {
-    "target": "es2016",
-    "module": "commonjs",
+    "target": "ESNext",
     "moduleResolution": "node",
-    "declaration": true,
-    "sourceMap": true,
-    "outDir": "./dist",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitAny": true,
     "skipDefaultLibCheck": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "noEmit": true
   },
   "include": ["lib/**/*.ts"]
 }
