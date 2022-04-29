@@ -11,8 +11,7 @@
   ],
   "scripts": {
     "build": "tsc --project tsconfig.json",
-    "test": "xo",
-    "lint:fix": "xo --fix",
+    "test": "tsc --noEmit --project tsconfig.json",
     "release": "standard-version"
   },
   "repository": {
@@ -33,15 +32,6 @@
   "devDependencies": {
     "@types/node": "^14.18.16",
     "standard-version": "^9.3.2",
-    "sucrase": "^3.21.0",
-    "typescript": "^4.6.3",
-    "xo": "^0.48.0"
-  },
-  "xo": {
-    "space": true,
-    "rules": {
-      "import/extensions": "off",
-      "@typescript-eslint/no-unsafe-assignment": "off"
-    }
+    "typescript": "^4.6.3"
   }
 }
