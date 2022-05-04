@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.0](https://github.com/Kontenty/lint-staged-tsc/compare/v0.0.2...v0.1.0) (2022-05-04)
+
+
+### Documentation
+
+* add documentation ([8238287](https://github.com/Kontenty/lint-staged-tsc/commit/8238287f5e8e800ba862a973168536f11bcd4f57))
+
+
+### Chore
+
+* add and configure commitizen ([b014be1](https://github.com/Kontenty/lint-staged-tsc/commit/b014be150c66650f32ed7d5ec8bb25aa7c65110f))
+* add and configure commitizen with cz-git adapter ([db1a8ea](https://github.com/Kontenty/lint-staged-tsc/commit/db1a8ea359c8aaf417de5ff3bc50defd1b1c2132))
+* add and setup husky with commitlint ([45d2059](https://github.com/Kontenty/lint-staged-tsc/commit/45d20593f98102097467c4ef9d8906a93542c23d))
+* add config for standard-version ([24b0d24](https://github.com/Kontenty/lint-staged-tsc/commit/24b0d24ec50ae3dcf7d9701d0d791c2c9fe322f8))
+
 ### [0.0.2](https://github.com/Kontenty/lint-staged-tsc/compare/v0.0.1...v0.0.2) (2022-04-29)
 
 
