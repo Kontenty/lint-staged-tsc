@@ -1,0 +1,10 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+if npx commitlint -q -e "\${1}" 
+then
+    echo "✅ Commit message is OK"
+else
+    echo "❌ Commit message needs to be fixed"
+    exec < /dev/tty && npx cz --hook || true
+fi
