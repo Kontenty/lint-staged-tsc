@@ -2,7 +2,7 @@ import type { CompilerOptions } from "typescript";
 
 type TsConfig = {
   compilerOptions: CompilerOptions;
-  include: string[];
+  include?: string[];
 };
 
 const matchHashComment = new RegExp(
@@ -19,7 +19,7 @@ export const parseTsConfig = (data: Buffer) => {
     const tsConfig: TsConfig = JSON.parse(json);
     return tsConfig;
   } catch (error) {
-    console.log("Error Unprocessable tsConfig file");
+    console.log("Error: Unprocessable tsConfig file");
     process.exit(1);
   }
 };
