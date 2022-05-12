@@ -1,7 +1,7 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-if npx commitlint -q -e "\${1}" 
+if npx commitlint -q -e $1 
 then
     echo "✅ Commit message is OK"
 else
