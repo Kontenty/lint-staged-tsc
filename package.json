@@ -9,6 +9,9 @@
   "files": [
     "dist"
   ],
+  "engines": {
+    "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
+  },
   "scripts": {
     "build": "sucrase-node scripts/build.ts",
     "test": "tsc --noEmit --project tsconfig.json",

@@ -5,5 +5,6 @@ build({
   outdir: "dist",
   bundle: true,
   platform: "node",
+  target: "node12.2",
   external: ["node:*"],
 });
