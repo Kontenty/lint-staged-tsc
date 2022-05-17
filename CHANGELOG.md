@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://github.com/Kontenty/lint-staged-tsc/compare/v0.1.0...v0.2.0) (2022-05-17)
+
+
+### Features
+
+* check for types declarations and leave them in tsconfig include ([01fe06c](https://github.com/Kontenty/lint-staged-tsc/commit/01fe06c0dad247815fac1f22425c88355b724112))
+
+
+### Bug Fixes
+
+* **prepare-commit-msg:** commitlint on windows ([7bda7a0](https://github.com/Kontenty/lint-staged-tsc/commit/7bda7a0230ba115c092bfb0d6cac557b6ea867bc))
+
+
+### Chore
+
+* specify engines and node target in build ([ea9a2cb](https://github.com/Kontenty/lint-staged-tsc/commit/ea9a2cbf379a4f82b8dce738141665eb062f7d45))
+
 ## [0.1.0](https://github.com/Kontenty/lint-staged-tsc/compare/v0.0.2...v0.1.0) (2022-05-04)
 
 
