@@ -1,3 +1,12 @@
+
+
+## [0.2.1](https://github.com/Kontenty/lint-staged-tsc/compare/v0.2.0...v0.2.1) (2022-05-18)
+
+
+### Bug Fixes
+
+* remove dist folder before build ([183790d](https://github.com/Kontenty/lint-staged-tsc/commit/183790d8f81973c786cae5dacf3c234ca78c9264))
+
 # Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
