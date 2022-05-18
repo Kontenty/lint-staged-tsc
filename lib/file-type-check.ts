@@ -25,6 +25,8 @@ const fileTypeCheck = async (stagedFiles: string[]) => {
       console.log(error);
       process.exitCode = 1;
     }
+  } finally {
+    return process.exitCode;
   }
 };
 
