@@ -1,0 +1,6 @@
+{
+  "extends": "./tsconfig.3.json",
+  "include": [
+    "./*.ts",
+  ]
+}

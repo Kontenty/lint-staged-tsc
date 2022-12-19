@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.3.json",
+  "compilerOptions": {
+    "target": "ES2015",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+    "noEmit": true
+  },
+  "include": [
+    "./*.ts",
+  ]
+}

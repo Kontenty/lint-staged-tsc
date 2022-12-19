@@ -1,7 +1,8 @@
 import type { CompilerOptions } from "typescript";
 
-type TsConfig = {
-  compilerOptions: CompilerOptions;
+export type TsConfig = {
+  extends?: string;
+  compilerOptions?: CompilerOptions;
   include?: string[];
 };
 
@@ -10,8 +11,13 @@ const matchHashComment = new RegExp(
   "gi"
 );
 
-const sanitizeJson = (json: string) =>
-  json.replace(matchHashComment, (match, g) => (g ? "" : match)).trim();
+const sanitizeJson = (json: string) => {
+  // Remove trailing commas
+  const withoutCommas = json.replace(/,(?=\s*?[\]}])/g, "");
+  return withoutCommas
+    .replace(matchHashComment, (match, g) => (g ? "" : match))
+    .trim();
+};
 
 export const parseTsConfig = (data: Buffer) => {
   const json = sanitizeJson(data.toString("utf8"));
