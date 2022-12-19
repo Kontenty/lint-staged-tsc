@@ -1,0 +1,8 @@
+{
+  "extends": "./tsconfig.2.json",
+  "buildOptions": {},
+  "exclude": [],
+  "include": [
+    "lib/**/*.ts",
+  ]
+}
