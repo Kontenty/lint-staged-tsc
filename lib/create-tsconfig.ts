@@ -11,12 +11,13 @@ export const createTsConfig = (stagedFiles: string[]) => {
   try {
     const tsConfigData = fs.readFileSync(tsConfigPath);
     const tsConfig = parseTsConfig(tsConfigData);
+    let tsIncludes: string[] = [];
     if (Array.isArray(tsConfig?.include) && tsConfig.include.length > 0) {
-      tsConfig.include = [
+      tsIncludes = [
         ...tsConfig?.include?.filter((included) => typesRegex.test(included)),
       ];
     }
-    tsConfig.include = [...stagedFiles];
+    tsConfig.include = [...tsIncludes, ...stagedFiles];
     tsConfig.compilerOptions.noEmit = true;
     delete tsConfig.compilerOptions.emitDeclarationOnly;
 
